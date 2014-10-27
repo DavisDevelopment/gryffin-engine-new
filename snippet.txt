@@ -1,0 +1,142 @@
+
+public function moveTo(x:Float, y:Float):Void {
+    var args:Array<Dynamic> = [x, y];
+    call("moveTo", args);
+}
+
+public function lineTo(x:Float, y:Float):Void {
+    var args:Array<Dynamic> = [x, y];
+    call("lineTo", args);
+}
+
+public function circle(x:Float, y:Float, radius:Float):Void {
+    var args:Array<Dynamic> = [x, y, radius];
+    call("drawCircle", args);
+}
+
+public function ellipse(x:Float, y:Float, width:Float, height:Float):Void {
+    var args:Array<Dynamic> = [x, y, width, height];
+    call("drawEllipse", args);
+}
+
+public function rect(x:Float, y:Float, width:Float, height:Float):Void {
+    var args:Array<Dynamic> = [x, y, width, height];
+    call("drawRect", args);
+}
+
+public function roundRect(x:Float, y:Float, width:Float, height:Float, ellipseWidth:Float, ellipseHeight:Float):Void {
+    var args:Array<Dynamic> = [x, y, width, height, ellipseWidth, ellipseHeight];
+    call("drawRoundRect", args);
+}
+
+public var fillStyle(get, set):Int;
+
+//- [fillStyle] Getter Method
+private inline function get_fillStyle():Int {
+    return currentState.fillStyle;
+}
+
+//- [fillStyle] Setter Method
+private inline function set_fillStyle(nv:Int):Int {
+    currentState.fillStyle = nv;
+    return nv;
+}
+
+
+public var strokeStyle(get, set):Int;
+
+//- [strokeStyle] Getter Method
+private inline function get_strokeStyle():Int {
+    return currentState.strokeStyle;
+}
+
+//- [strokeStyle] Setter Method
+private inline function set_strokeStyle(nv:Int):Int {
+    currentState.strokeStyle = nv;
+    return nv;
+}
+
+
+public var lineWidth(get, set):Float;
+
+//- [lineWidth] Getter Method
+private inline function get_lineWidth():Float {
+    return currentState.lineWidth;
+}
+
+//- [lineWidth] Setter Method
+private inline function set_lineWidth(nv:Float):Float {
+    currentState.lineWidth = nv;
+    return nv;
+}
+
+
+public var lineCap(get, set):Int;
+
+//- [lineCap] Getter Method
+private inline function get_lineCap():Int {
+    return currentState.lineCap;
+}
+
+//- [lineCap] Setter Method
+private inline function set_lineCap(nv:Int):Int {
+    currentState.lineCap = nv;
+    return nv;
+}
+
+
+public var lineJoin(get, set):Int;
+
+//- [lineJoin] Getter Method
+private inline function get_lineJoin():Int {
+    return currentState.lineJoin;
+}
+
+//- [lineJoin] Setter Method
+private inline function set_lineJoin(nv:Int):Int {
+    currentState.lineJoin = nv;
+    return nv;
+}
+
+
+public var alpha(get, set):Float;
+
+//- [alpha] Getter Method
+private inline function get_alpha():Float {
+    return currentState.alpha;
+}
+
+//- [alpha] Setter Method
+private inline function set_alpha(nv:Float):Float {
+    currentState.alpha = nv;
+    return nv;
+}
+
+
+public var scaleX(get, set):Float;
+
+//- [scaleX] Getter Method
+private inline function get_scaleX():Float {
+    return currentState.scaleX;
+}
+
+//- [scaleX] Setter Method
+private inline function set_scaleX(nv:Float):Float {
+    currentState.scaleX = nv;
+    return nv;
+}
+
+
+public var scaleY(get, set):Float;
+
+//- [scaleY] Getter Method
+private inline function get_scaleY():Float {
+    return currentState.scaleY;
+}
+
+//- [scaleY] Setter Method
+private inline function set_scaleY(nv:Float):Float {
+    currentState.scaleY = nv;
+    return nv;
+}
+

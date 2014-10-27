@@ -1,0 +1,71 @@
+{
+	"methods": [
+		{
+			"name": "moveTo",
+			"refName": "moveTo",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"]
+			]
+		},
+		{
+			"name": "lineTo",
+			"refName": "lineTo",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"]
+			]
+		},
+		{
+			"name": "circle",
+			"refName": "drawCircle",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"],
+				["radius", "Float"]
+			]
+		},
+		{
+			"name": "ellipse",
+			"refName": "drawEllipse",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"],
+				["width", "Float"],
+				["height", "Float"]
+			]
+		},
+		{
+			"name": "rect",
+			"refName": "drawRect",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"],
+				["width", "Float"],
+				["height", "Float"]
+			]
+		},
+		{
+			"name": "roundRect",
+			"refName": "drawRoundRect",
+			"arguments": [
+				["x", "Float"],
+				["y", "Float"],
+				["width", "Float"],
+				["height", "Float"],
+				["ellipseWidth", "Float"],
+				["ellipseHeight", "Float"]
+			]
+		}
+	],
+	"contextFields": [
+		["fillStyle", "fillStyle", "Int"],
+		["strokeStyle", "strokeStyle", "Int"],
+		["lineWidth", "lineWidth", "Float"],
+		["lineCap", "lineCap", "Int"],
+		["lineJoin", "lineJoin", "Int"],
+		["alpha", "alpha", "Float"],
+		["scaleX", "scaleX", "Float"],
+		["scaleY", "scaleY", "Float"]
+	]
+}

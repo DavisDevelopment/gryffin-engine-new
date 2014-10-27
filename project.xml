@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="GryffinEngineRewrite" package="com.davisdevelopment.gryffin" version="0.0.1" company="Davis Development" />
+	<app main="ReGryffin" path="../dist" file="war" />
+	
+	<haxedef name="openfl" />
+	<haxedef name="debug" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+
+	<source path="gryffin" />
+	<source path="demo" />
+
+	<assets path="assets/sprites" rename="sprites" include="*" />
+	<assets path="assets/sounds" rename="sounds" include="*.wav" />
+	<assets path="assets/scripts" rename="scripts" include="*" />
+
+	<setenv name="JAVA_HOME" value='/usr/lib/jvm/java-6-oracle' if='android'/>
+	<java path="java/build/src" if='android'/>
+</project>
