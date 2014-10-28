@@ -49,6 +49,7 @@ class LocalStorage {
 			ls.setItem(LS_KEY, frozen);
 		#elseif !flash
 			sys.io.File.saveContent((LS_KEY+'.dat'), frozen);
+			trace('localStorage saved');
 		#else
 			return;
 		#end
@@ -74,6 +75,7 @@ class LocalStorage {
 				'name' : key,
 				'data' : data
 			};
+			entries.push( entry );
 		} else {
 			entry.data = data;
 		}
